@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f7e6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #003300;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 1.8em;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 90%;
+    max-width: 1200px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.world, .world-status, .brazil, .team-section, .text-section {
+    background-color: #e8f4d9;
+    border: 3px solid #006600;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.text-section h2 {
+    background-color: #006600;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+h2, h3 {
+    background-color: #006600;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+h3 {
+    margin-top: 24px;
+    color: #003300;
+}
+
+.team-member {
+    background-color: #d6e9c6;
+    border: 1px solid #006600;
+    border-radius: 5px;
+    padding: 16px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #006600;
+    color: #fff;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #d6e9c6;
+}
+
+.status-chart, .world-map {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;  
+}
+
+#regions_div, #piechart {
+    width: 100%;
+    max-width: 900px; 
+    height: 400px;
+    max-height: 500px;
+    margin: 0 auto;
+}

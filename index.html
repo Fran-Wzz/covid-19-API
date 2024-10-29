@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto API COVID-19</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Projeto API COVID-19</h1>
+        <nav>
+            <a href="index.html">Página inicial</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="equipe.html">Equipe</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="world">
+            <h2>Covid-19 pelo mundo</h2>
+            <div id="regions_div" class="world-map" style="width: 900px; height: 500px;">
+                <!-- O mapa será carregado aqui pelo JavaScript -->
+            </div>
+        </div>
+
+        <div class="world-status">
+            <h2>Covid-19 pelo mundo - Status</h2>
+            <div class="status-chart" id="piechart" style="width: 900px; height: 500px;"></div>
+        </div>
+        
+        <!-- Tabela COVID-19 no Brasil -->
+        <div class="brazil">
+            <h2>Covid-19 no Brasil</h2>
+            <table id="brazil-covid-table">
+                <thead>
+                    <tr>
+                        <th>Sigla</th>
+                        <th>Estado</th>
+                        <th>Casos</th>
+                        <th>Mortes</th>
+                        <th>Suspeitos</th>
+                        <th>Descartados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela serão inseridas aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
